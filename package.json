@@ -2,10 +2,11 @@
   "name": "@jsonxr/react-native-who-charts",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
+    "lint": "eslint src",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "download": ""
+    "download": "node utils/download-who.js && prettier src/** --write"
   },
   "files": [
     "src",
@@ -21,8 +22,8 @@
     "react-native": "^0.61.x"
   },
   "devDependencies": {
+    "@jsonxr/eslint-config": "^1.0.0",
     "axios": "^0.19.2",
-    "cheerio": "^1.0.0-rc.3",
     "react": "^16.12.0",
     "react-native": "^0.61.x"
   }

@@ -69,10 +69,10 @@ const subjectChartConfig = {
 
 console.log('\n\n\n\n----------------------------');
 console.log(
-  whoData['P3'].map(value => ({
+  whoData.P3.map(value => ({
     y: value,
     marker: `${value}`,
-  })),
+  }))
 );
 console.log('----------------------------\n\n\n\n');
 
@@ -123,7 +123,7 @@ const dataSets = createMergeDataSets(
       { x: 8, y: 9, marker: '9kg' },
     ],
   },
-  ['P3', 'P25', 'P50', 'P75', 'P97'],
+  ['P3', 'P25', 'P50', 'P75', 'P97']
 );
 
 const data = {
