@@ -39,7 +39,7 @@ const writeJsFile = async (url, filename, limitRows) => {
   const data = await fetchWhoData(url, limitRows);
   await fs.writeFile(
     filename,
-    `export default ${JSON.stringify(data, null, 2)};`
+    `// prettier-ignore\nexport default ${JSON.stringify(data)};`
   );
   console.log(`wrote ${filename}`);
 };
